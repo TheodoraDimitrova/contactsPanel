@@ -1,38 +1,24 @@
 {
-  "name": "refreshreact",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "express": "^4.16.4",
-    "express-favicon": "^2.0.1",
-    "path": "^0.12.7",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
-  },
+  "name": "contactpanel",
+  "version": "1.0.0",
+  "description": "manage contacts",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheodoraDimitrova/contactsPanel.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "TBD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheodoraDimitrova/contactsPanel/issues"
   },
-  "engines": {
-    "node": "10.15.3"
+  "homepage": "https://github.com/TheodoraDimitrova/contactsPanel#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
   }
 }
