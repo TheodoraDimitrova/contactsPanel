@@ -14,6 +14,12 @@ import PropTypes from "prop-types";
         <li className="nav-item">
         <a href="/" className="nav-link">Home</a>
         </li>
+        <li className="nav-item">
+        <a href="/add" className="nav-link">Add</a>
+        </li>
+        <li className="nav-item">
+        <a href="/about" className="nav-link">About</a>
+        </li>
         
         </ul>
       </nav>
