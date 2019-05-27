@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Consumer } from "../../context";
-import uuid from "uuid";
+import uuid from "uuid";//Universally unique identifier
 import TextInputGroup from "../layout/TextInputGroup";
 
 class AddContact extends Component {
@@ -33,11 +33,12 @@ class AddContact extends Component {
     }
 
     const newContact = {
-      id: uuid,
+      id: uuid(),
       name,
       email,
       phone
     };
+    console.log(newContact)
     dispatch({ type: "ADD_CONTACT", payload: newContact });
     //clear form
     this.setState({
@@ -46,6 +47,8 @@ class AddContact extends Component {
       phone: "",
       errors: {} //clear errors
     });
+
+    this.props.history.push("/")//redirect
   };
 
   render() {

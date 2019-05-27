@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Contacts from "./components/contacts/Contacts";
 import AddContact from "./components/contacts/AddContact";
-import AddContact1 from "./components/contacts/AddContact-ref";
+//import AddContact1 from "./components/contacts/AddContact-ref";
 import About from "./components/pages/About";
 import Provider from "./context";
 
