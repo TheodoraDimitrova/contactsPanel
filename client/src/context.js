@@ -29,10 +29,10 @@ export default class Provider extends Component {
       this.setState(state => reducer(state, action));
     }
   };
-  componentDidMount() {
+  componentDidMount() {//get request to jsonplaceholder get data
     axios.get("https://jsonplaceholder.typicode.com/users").then(res => {
       this.setState({
-        contacts: res.data
+        contacts: res.data//set the result in the state
       });
     });
   }
