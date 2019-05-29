@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Consumer } from "../../context";
 import axios from "axios";
+import {Link} from "react-router-dom";
 
 class Contact extends Component {
   state = {
@@ -39,6 +40,12 @@ class Contact extends Component {
                   style={{ cursor: "pointer", color: "red", float: "right" }}
                   onClick={this.deleteContact.bind(this, id, dispatch)}
                 />
+                <Link to={`contact/edit/${id}`}>
+                  <i
+                    className="fas fa-pencil-alt"
+                    style={{ cursor: "pointer", color: "green", float: "right" , marginRight:"1rem" }}
+                  />
+                </Link>
               </h4>
               {showInfo ? (
                 <ul className="list-group">
